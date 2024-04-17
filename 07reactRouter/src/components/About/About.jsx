@@ -4,10 +4,10 @@ import profileImage from "../../assets/WhatsApp Image 2024-04-15 at 00.49.23.jpe
 import "./about.css";
 
 const skillsData = [
-  { name: "Web Development", percentage: 80 },
-  { name: "UI/UX Design", percentage: 70 },
-  { name: "JavaScript", percentage: 85 },
-  { name: "React", percentage: 75 },
+  { name: "Web Development" },
+  { name: "UI/UX Design" },
+  { name: "JavaScript" },
+  { name: "React" },
   // Add more skills and percentages as needed
 ];
 
@@ -15,8 +15,8 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="py-20 bg-gray-100 flex flex-col lg:flex-row items-center lg:justify-between">
-        <div className="lg:w-1/2 lg:ml-12 mb-8 lg:mb-0 flex-shrink-0">
+      <section className="py-20 bg-slate-100 flex flex-col lg:flex-row items-center lg:justify-between">
+        <div className="lg:w-1/2 p-11 lg:ml-12 mb-8 lg:mb-0 flex-shrink-0">
           <img
             src={profileImage} // Use the imported image
             alt="Your Name"
@@ -32,13 +32,13 @@ const About = () => {
             className="text-4xl sm:text-5xl font-bold mb-4 text-center lg:text-left"
             style={{ animation: "slideInName 1s forwards" }}
           >
-            <span className="text-black">Neetu</span>{" "}
-            <span className="text-red-500">Sarkar</span>
+            <span className="text-gray-300">Neetu</span>{" "}
+            <span className="text-slate-200">Sarkar</span>
           </h2>
 
           <p
-            className="text-lg text-gray-800 mb-8 text-center lg:text-left"
-            style={{ animation: "slideIn 1s forwards 0.5s" }}
+            className="text-lg text-slate-300 mb-8 text-center lg:text-left"
+            style={{ animation: "slideIn 1s forwards " }}
           >
             I'm a skilled Full Stack Web Developer specializing in React.js,
             adept at tackling complex challenges with a flair for innovation.
@@ -53,19 +53,18 @@ const About = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-20 bg-slate-100">
         <div className="container mx-auto px-8">
-          <h3 className="text-2xl font-semibold mb-4 text-center">Skills</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-center text-slate-200">
+            Skills
+          </h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {skillsData.map((skill, index) => (
               <li
                 key={index}
-                className="relative py-2 px-4 bg-gray-200 rounded-full text-center hover:bg-gray-300"
+                className="relative py-2 px-4 bg-slate-300 rounded-full text-center hover:bg-slate-200"
               >
                 {skill.name}
-                <span className="absolute top-full left-0 w-full p-2 bg-gray-800 text-white text-center rounded-b-lg opacity-0 transition-opacity duration-300 hover:opacity-100">
-                  {skill.percentage}%
-                </span>
               </li>
             ))}
           </ul>
@@ -73,45 +72,51 @@ const About = () => {
       </section>
 
       {/* Education Section */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-20 bg-slate-100">
         <div className="container mx-auto px-8">
-          <h3 className="text-2xl font-semibold mb-4 text-center">Education</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-center text-slate-200">
+            Education
+          </h3>
           <div className="flex flex-col space-y-4">
-            <div className="bg-gray-200 rounded-lg py-4 px-6">
+            <div className="bg-slate-300 rounded-lg py-4 px-6">
               <div>
-                <h4 className="text-lg font-semibold text-blue-500">
+                <h4 className="text-lg font-semibold text-slate-200 text-slate-100">
                   Bachelor's Degree in Computer Science
                 </h4>
-                <p className="text-sm">
+                <p className="text-sm text-gray-700">
                   Parul Institute of Engineering and Technology
                 </p>
               </div>
               <div className="text-sm">
-                <p className="mb-1">Duration: 2020 - 2024</p>
+                <p className="mb-1 text-gray-700">Duration: 2020 - 2024</p>
                 <p className="text-gray-600">Pursuing</p>
               </div>
             </div>
-            <div className="bg-gray-200 rounded-lg py-4 px-6">
+            <div className="bg-slate-300 rounded-lg py-4 px-6">
               <div>
-                <h4 className="text-lg font-semibold text-blue-500">
+                <h4 className="text-lg font-semibold text-slate-200 ">
                   Senior Secondary School
                 </h4>
-                <p className="text-sm">D.A.V Senior Secondary School</p>
+                <p className="text-sm text-gray-700">
+                  D.A.V Senior Secondary School
+                </p>
               </div>
               <div className="text-sm">
-                <p className="mb-1">Duration: 2017 - 2019</p>
+                <p className="mb-1 text-gray-700">Duration: 2017 - 2019</p>
                 <p className="text-gray-600">Passed</p>
               </div>
             </div>
-            <div className="bg-gray-200 rounded-lg py-4 px-6">
+            <div className="bg-slate-300 rounded-lg py-4 px-6">
               <div>
-                <h4 className="text-lg font-semibold text-blue-500">
+                <h4 className="text-lg font-semibold text-slate-200 ">
                   High School
                 </h4>
-                <p className="text-sm">Saheed Laxman Nayak Public School</p>
+                <p className="text-sm text-gray-700">
+                  Saheed Laxman Nayak Public School
+                </p>
               </div>
               <div className="text-sm">
-                <p className="mb-1">Duration: 2004 - 2017</p>
+                <p className="mb-1 text-gray-700">Duration: 2004 - 2017</p>
                 <p className="text-gray-600">Passed</p>
               </div>
             </div>
@@ -120,21 +125,23 @@ const About = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-20 bg-slate-100">
         <div className="container mx-auto px-8">
-          <h3 className="text-2xl font-semibold mb-4 text-center">
+          <h3 className="text-2xl font-semibold mb-4 text-center text-slate-200">
             Experience
           </h3>
           <div className="flex flex-col space-y-8">
-            <div className="bg-gray-200 rounded-lg py-4 px-6">
+            <div className="bg-slate-300 rounded-lg py-4 px-6">
               <div>
-                <h4 className="text-lg font-semibold text-blue-500">
+                <h4 className="text-lg font-semibold text-slate-200 ">
                   Business Development Executive
                 </h4>
-                <p className="text-sm">Skolar Edu Tech Pvt Ltd</p>
+                <p className="text-sm text-gray-700">Skolar Edu Tech Pvt Ltd</p>
               </div>
               <div className="text-sm">
-                <p className="mb-1">Duration: Dec 2023 - Feb 2023</p>
+                <p className="mb-1 text-gray-700">
+                  Duration: Dec 2023 - Feb 2023
+                </p>
                 <p className="text-gray-600">Short-term contract</p>
               </div>
             </div>
@@ -144,10 +151,13 @@ const About = () => {
       </section>
 
       {/* Get in Touch */}
-      <div className="text-center mt-8 mb-4">
+      <div className="text-center py-5  bg-slate-100">
+        <h3 className="text-2xl font-semibold mb-4 text-center text-slate-300">
+          If you want to develop something, Feel free to Contact me
+        </h3>
         <Link
           to="/contact"
-          className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out inline-block"
+          className="bg-slate-200 hover:bg-blue-400 text-slate-300 font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out inline-block"
         >
           Get in Touch
         </Link>

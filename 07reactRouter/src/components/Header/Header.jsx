@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/Neetu (3).png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,20 +10,16 @@ export default function Header() {
   };
 
   return (
-    <header className="shadow sticky top-0 w-full z-50">
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+    <header className="bg-slate-50- shadow sticky top-0 w-full z-50">
+      <nav className="bg-slate-50 border-gray-600 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
-            <img
-              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-              className="mr-3 h-12"
-              alt="Logo"
-            />
+            <img src={logo} className="mr-3 h-12" alt="Logo" />
           </Link>
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="block text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2 focus:outline-none"
+              className="block text-gray-200 hover:text-gray-300 focus:ring-4 focus:ring-gray-600 font-medium rounded-lg text-sm px-3 py-2 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -52,8 +49,8 @@ export default function Header() {
                   to="/"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
-                      isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      isActive ? "text-slate-200" : "text-slate-300"
+                    } border-b border-gray-600 hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-slate-200 lg:p-0`
                   }
                   onClick={toggleMenu}
                 >
@@ -65,8 +62,8 @@ export default function Header() {
                   to="/about"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
-                      isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      isActive ? "text-slate-200" : "text-slate-300"
+                    } border-b border-gray-600 hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-slate-200 lg:p-0`
                   }
                   onClick={toggleMenu}
                 >
@@ -78,8 +75,8 @@ export default function Header() {
                   to="/projects"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
-                      isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      isActive ? "text-slate-200" : "text-slate-300"
+                    } border-b border-gray-600 hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-slate-200 lg:p-0`
                   }
                   onClick={toggleMenu}
                 >
@@ -91,8 +88,8 @@ export default function Header() {
                   to="/contact"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
-                      isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      isActive ? "text-slate-200" : "text-slate-300"
+                    } border-b border-gray-600 hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-slate-200 lg:p-0`
                   }
                   onClick={toggleMenu}
                 >
@@ -104,8 +101,8 @@ export default function Header() {
                   to="/github"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
-                      isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      isActive ? "text-slate-200" : "text-slate-300"
+                    } border-b border-gray-600 hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-slate-200 lg:p-0`
                   }
                   onClick={toggleMenu}
                 >
